@@ -4,7 +4,6 @@
 > **Course:** Digital Design and Computer Architecture (DDCA)
 > **Current phase:** 🟢 Design & simulation complete (see [Project Status](#-project-status))
 
-![Complete circuit](docs/images/full_circuit.png)
 
 ---
 
@@ -12,10 +11,10 @@
 
 | Name                              | Registration / ID No. | GitHub |
 |-----------------------------------|-----------------------|--------|
-| Shreyesh Reddy Gudi               | 2620030608            | `@<username>` |
-| Kaustubha Srinivas Kaseebhotla    | 2620030601            | `@<username>` |
-| Rachuri Harshita                  | 2620030654            | `@<username>` |
-| Rudrakashala Harshitha            | 2620030591            | `@<username>` |
+| Shreyesh Reddy Gudi               | 2620030608            | `@<shreyeshreddygudi-tech>` |
+| Kaustubha Srinivas Kaseebhotla    | 2620030601            | `@<KaustubhSrinivas28>` |
+| Rachuri Harshita                  | 2620030654            | `@<harshitarachuri>` |
+| Rudrakashala Harshitha            | 2620030591            | `@<harshitha-591>` |
 
 **Supervisor:** Kartheek
 **Department:** Computer Science and Engineering, KL University, Hyderabad
@@ -62,52 +61,6 @@ The design uses **8 XOR gates and 4 comparators**, with no clock, memory, encode
 
 ---
 
-## 📁 Repository Structure
-
-```
-.
-├── src/                  # Logisim circuit file (.circ)
-├── docs/                 # Documentation and circuit screenshots
-│   └── images/
-├── data/                 # Data-source note (no external dataset; inputs set via pins)
-├── results/              # Truth tables, test vectors and verification screenshots
-├── reports/              # Project presentation and review reports
-└── README.md
-```
-
----
-
-## ⚙️ Setup & Execution
-
-### Prerequisites
-
-- [Logisim](http://www.cburch.com/logisim/) or [Logisim Evolution](https://github.com/logisim-evolution/logisim-evolution) (requires Java)
-
-### Run the simulation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/<org-or-user>/KLH-CSE-2026-2030-<TeamID>-XOR-EncDec.git
-   ```
-2. Open Logisim and choose **File → Open**. Select the `.circ` file in [`/src`](src/).
-3. Pick the **Poke tool** (hand icon) from the toolbar.
-4. Click pins **P0–P3** to set the plaintext and **K0–K3** to set the key.
-5. Observe the outputs:
-   - **C0–C3** show the ciphertext, which updates instantly.
-   - **D0–D3** show the decrypted bits, which always equal P.
-   - The **comparator outputs** stay lit, confirming each bit matches.
-
-### Example
-
-| Input | Value | Expected output |
-|-------|-------|-----------------|
-| P     | 1011  | C = 0111        |
-| K     | 1100  | D = 1011 → MATCH ✅ |
-
-Full results are in [`/results/results.md`](results/results.md).
-
----
-
 ## 📌 Project Status
 
 | Phase | Deliverable | Status | Git tag |
@@ -118,7 +71,7 @@ Full results are in [`/results/results.md`](results/results.md).
 | Review 2 | _update_ | ⬜ Pending | `review-2` |
 | Final | Final circuit, report and presentation | ⬜ Pending | `final` |
 
-_Last updated: <DD-MM-YYYY>_
+_Last updated: <19-9-2026>_
 
 ---
 
@@ -133,14 +86,3 @@ Possible future work:
 - **Reusable module.** Use the unit as a building block in larger digital designs.
 
 ---
-
-## 🤝 Contribution Guidelines (Team)
-
-- Every member commits from their **own GitHub account**. Bulk uploads through a single account are not permitted.
-- Make **at least one meaningful commit per week** during each phase.
-- Tag each major deliverable. For example:
-  ```bash
-  git tag -a review-1 -m "Review 1 deliverable"
-  git push origin review-1
-  ```
-- Do **not** rename, transfer or move this repository once its URL is recorded without prior written approval from the Course Coordinator.
